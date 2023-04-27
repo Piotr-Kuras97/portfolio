@@ -1,0 +1,148 @@
+@import 'variables';
+
+.header{
+    position: relative;
+    z-index: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgb(23,23,23);
+    background: linear-gradient(180deg, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 68%, rgba(24,32,38,1) 100%);
+
+    @media(min-width: 781px){
+        top: 10vh;
+        height: 90vh;
+    }
+
+    &__lines{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        margin: auto;
+        width: 90vw;
+
+        .header__line{
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            top: 0;;
+            left: 50%;
+            background: rgb(255,255,255);
+            background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 68%, rgba(24,32,38,0) 100%);
+            overflow: hidden;
+
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                height: 15vh;
+                width: 100%;
+                top: -50%;
+                left: 0;
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+                animation: drop 7s 0s infinite;
+                animation-fill-mode: forwards;
+                animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+            }
+
+            &:nth-child(1){
+                margin-left: -25%;
+
+                &::after{
+                    animation-delay: 2s;
+                }
+            }
+
+            &:nth-child(3){
+                margin-left: 25%;
+
+                &::after{
+                    animation-delay: 2.5s;
+                }
+            }
+        }
+    }
+
+    &__info{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+
+        .header__name{
+            font-size: 4.2rem;
+            text-transform: uppercase;
+
+            @media (min-width: 576px){
+                font-size: 5.5rem;
+            }
+
+            @media (min-width: 1024px){
+                font-size: 9.5rem;
+            }
+        }
+
+        .header__profession{
+            font-size: 2.5rem;
+            font-family: $special-font-family;
+            animation: headerProfession 1s both;
+
+            @media (min-width: 576px){
+                font-size: 3rem;
+            }
+
+            @media (min-width: 576px){
+                font-size: 4.6rem;
+            }
+        }
+    }
+
+    &__go-down{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5%;
+        width: 40px;
+        height: 80px;
+        border-radius: 25px;
+        border: 3px solid $hover-color;
+        color: $hover-color;
+
+        i{
+            font-size: 2.5rem;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            animation: arrowMove 1s linear alternate both infinite;
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes drop{
+    0%{top: -50%; opacity: 1}
+    35%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{top: 110%; opacity: 0;}
+}
+
+@keyframes headerProfession{
+    0%{
+        transform: translateY(150px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes arrowMove{
+    100%{
+        top: 80%
+    }
+}

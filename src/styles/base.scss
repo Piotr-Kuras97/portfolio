@@ -1,0 +1,25 @@
+@import 'variables';
+
+html{
+    font-size: 10px;
+    font-family: $default-font-family;
+    color: $basic-font-color;
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba($color: #000000, $alpha: 0.5);
+}

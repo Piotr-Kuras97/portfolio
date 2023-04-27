@@ -1,0 +1,24 @@
+.goup{
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    transition: .4s;
+
+    &.active{
+        bottom: 20px
+    }
+
+    &__arrow{
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        font-size: 2.5rem;
+        text-align: center;
+        color: black;
+    }
+}
