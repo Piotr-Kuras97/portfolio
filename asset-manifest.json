@@ -1,14 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.515c7893.css",
-    "main.js": "/portfolio/static/js/main.3fa091c6.js",
+    "main.css": "/portfolio/static/css/main.7c4db7d4.css",
+    "main.js": "/portfolio/static/js/main.decdfdfe.js",
+    "static/media/phoros-serwis.png": "/portfolio/static/media/phoros-serwis.ab9dbb19e803f4c9703f.png",
+    "static/media/eclinic.png": "/portfolio/static/media/eclinic.fb83c20f92c45206c7a6.png",
+    "static/media/drink-finder.png": "/portfolio/static/media/drink-finder.434faee5db0c64670855.png",
+    "static/media/car-game.png": "/portfolio/static/media/car-game.743941a6674f351764d2.png",
+    "static/media/weather-app.png": "/portfolio/static/media/weather-app.e5d0f28ebe92df96fd1e.png",
+    "static/media/currency-calculator.png": "/portfolio/static/media/currency-calculator.d0529967f2f819581529.png",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.c7f218ab170ed7b50c01.jpg",
+    "static/media/react-icon.svg": "/portfolio/static/media/react-icon.873a95381db622d9638009c613a4d519.svg",
     "index.html": "/portfolio/index.html",
-    "main.515c7893.css.map": "/portfolio/static/css/main.515c7893.css.map",
-    "main.3fa091c6.js.map": "/portfolio/static/js/main.3fa091c6.js.map"
+    "static/media/javascript-icon.svg": "/portfolio/static/media/javascript-icon.865c831e9be0fc4b6b6d2ea470b3fa64.svg",
+    "static/media/webpack-icon.svg": "/portfolio/static/media/webpack-icon.264bd354419f886222fdd6c3eae19762.svg",
+    "static/media/git-icon.svg": "/portfolio/static/media/git-icon.aeeb13ab71f0fa41e8bb99688f96cfdd.svg",
+    "static/media/bootstrap-icon.svg": "/portfolio/static/media/bootstrap-icon.99ff40c99633dbe9199a405ec4ff4f65.svg",
+    "static/media/typescript-icon.svg": "/portfolio/static/media/typescript-icon.ced98752566ac4b3a366e8e41677cd67.svg",
+    "static/media/css-icon.svg": "/portfolio/static/media/css-icon.64fa1d1c4801d931c3717be71f6c020e.svg",
+    "static/media/html-icon.svg": "/portfolio/static/media/html-icon.8ae3d4adcd70a1028a6377697d9f33b0.svg",
+    "main.7c4db7d4.css.map": "/portfolio/static/css/main.7c4db7d4.css.map",
+    "main.decdfdfe.js.map": "/portfolio/static/js/main.decdfdfe.js.map"
   },
   "entrypoints": [
-    "static/css/main.515c7893.css",
-    "static/js/main.3fa091c6.js"
+    "static/css/main.7c4db7d4.css",
+    "static/js/main.decdfdfe.js"
   ]
 }
