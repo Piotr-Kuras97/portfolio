@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.40229c12.css",
+    "main.css": "/portfolio/static/css/main.2376781f.css",
     "main.js": "/portfolio/static/js/main.cae94fb5.js",
     "static/media/phoros-serwis.png": "/portfolio/static/media/phoros-serwis.ab9dbb19e803f4c9703f.png",
     "static/media/eclinic.png": "/portfolio/static/media/eclinic.fb83c20f92c45206c7a6.png",
@@ -19,11 +19,11 @@
     "static/media/bootstrap-icon.svg": "/portfolio/static/media/bootstrap-icon.99ff40c99633dbe9199a405ec4ff4f65.svg",
     "static/media/typescript-icon.svg": "/portfolio/static/media/typescript-icon.ced98752566ac4b3a366e8e41677cd67.svg",
     "static/media/html-icon.svg": "/portfolio/static/media/html-icon.8ae3d4adcd70a1028a6377697d9f33b0.svg",
-    "main.40229c12.css.map": "/portfolio/static/css/main.40229c12.css.map",
+    "main.2376781f.css.map": "/portfolio/static/css/main.2376781f.css.map",
     "main.cae94fb5.js.map": "/portfolio/static/js/main.cae94fb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.40229c12.css",
+    "static/css/main.2376781f.css",
     "static/js/main.cae94fb5.js"
   ]
 }
