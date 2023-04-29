@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ee6e8cbc.css",
-    "main.js": "/portfolio/static/js/main.c17aaf0f.js",
+    "main.js": "/portfolio/static/js/main.a02af8b3.js",
     "static/media/phoros-serwis.png": "/portfolio/static/media/phoros-serwis.ab9dbb19e803f4c9703f.png",
     "static/media/eclinic.png": "/portfolio/static/media/eclinic.fb83c20f92c45206c7a6.png",
     "static/media/drink-finder.png": "/portfolio/static/media/drink-finder.434faee5db0c64670855.png",
@@ -20,10 +20,10 @@
     "static/media/typescript-icon.svg": "/portfolio/static/media/typescript-icon.ced98752566ac4b3a366e8e41677cd67.svg",
     "static/media/html-icon.svg": "/portfolio/static/media/html-icon.8ae3d4adcd70a1028a6377697d9f33b0.svg",
     "main.ee6e8cbc.css.map": "/portfolio/static/css/main.ee6e8cbc.css.map",
-    "main.c17aaf0f.js.map": "/portfolio/static/js/main.c17aaf0f.js.map"
+    "main.a02af8b3.js.map": "/portfolio/static/js/main.a02af8b3.js.map"
   },
   "entrypoints": [
     "static/css/main.ee6e8cbc.css",
-    "static/js/main.c17aaf0f.js"
+    "static/js/main.a02af8b3.js"
   ]
 }
