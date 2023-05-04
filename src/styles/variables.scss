@@ -3,9 +3,12 @@ $special-font-family: 'Roboto Mono', monospace;
 
 $basic-font-color: white;
 $special-font-color: #15212E;
-$hover-color: magenta;
+$hover-color: rgba(255, 0, 255, 0.8);
+
+$bgc-color:#182026;
+$special-bgc-color: #171717;
 
 $max-width: 1600px;
 
 $margin-mobile: 25px;
-$margin-desktop: 75px;
+$margin-desktop: 100px;

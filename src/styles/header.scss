@@ -10,8 +10,8 @@
     background: linear-gradient(180deg, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 68%, rgba(24,32,38,1) 100%);
 
     @media(min-width: 781px){
-        top: 10vh;
-        height: 90vh;
+        top: 0;
+        height: 100vh;
     }
 
     &__lines{
@@ -71,12 +71,20 @@
         transform: translateY(-50%);
         text-align: center;
 
+        @media (orientation: landscape) and (max-width: 791px){
+            top: 40%
+        }
+
         .header__name{
             font-size: 4.2rem;
             text-transform: uppercase;
 
             @media (min-width: 576px){
                 font-size: 5.5rem;
+            }
+
+            @media (orientation: landscape) and (max-width: 791px){
+                font-size: 4rem;
             }
 
             @media (min-width: 1024px){
@@ -93,7 +101,11 @@
                 font-size: 3rem;
             }
 
-            @media (min-width: 576px){
+            @media (orientation: landscape) and (max-width: 791px){
+                font-size: 2rem;
+            }
+
+            @media (min-width: 1024px){
                 font-size: 4.6rem;
             }
         }
@@ -103,12 +115,25 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 5%;
+        bottom: 10%;
         width: 40px;
         height: 80px;
         border-radius: 25px;
         border: 3px solid $hover-color;
         color: $hover-color;
+        transition: 1s;
+        opacity: 1;
+
+        &.remove{
+            opacity: 0;
+        }
+
+        @media (orientation: landscape) and (max-width: 791px){
+            height: 60px;
+            width: 30px;
+            bottom: 15%;
+        }
+
 
         i{
             font-size: 2.5rem;
@@ -118,6 +143,10 @@
             transform: translate(-50%, -50%);
             animation: arrowMove 1s linear alternate both infinite;
             cursor: pointer;
+
+            @media (orientation: landscape) and (max-width: 791px){
+                font-size: 1.5rem;
+            }
         }
     }
 }

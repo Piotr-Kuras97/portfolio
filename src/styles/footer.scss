@@ -1,0 +1,22 @@
+@import 'variables';
+
+.footer {
+    position: relative;
+    min-height: 30vh;
+    background: rgb(24,32,38);
+    background: linear-gradient(180deg, rgba(24,32,38,1) 0%, rgba(0,0,0,1) 100%);
+
+    &__credits{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.3rem;
+        font-family: $special-font-family;
+        width: 100%;
+        text-align: center;
+
+        i,a {
+            color: $hover-color;
+        }
+    }
+}

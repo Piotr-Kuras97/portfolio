@@ -1,0 +1,120 @@
+@import 'variables';
+@import 'mixins';
+
+.contact{
+    @include sectionGap;
+    margin-bottom: 100px;
+
+    &__title{
+        @include sectionTitle(#0e7e1f);
+    }  
+
+    &__text{
+        margin: $margin-mobile * 2;
+        text-align: center;
+        font-size: 2rem;
+
+        @media (min-width: 781px){
+            font-size: 3rem;
+        }
+
+        @media (min-width: 991px){
+            margin: $margin-desktop;
+            font-size: 3.5rem;
+        }
+
+        span{
+            color: $hover-color
+        }
+    }
+
+    &__options-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: 991px){
+            flex-direction: row;
+        }
+
+        .contact__option {
+            margin: 20px 0;
+
+            @media (min-width: 991px){
+                margin: 25px 15px;
+            }
+
+            &-btn{
+                width: 200px;
+                padding: 15px 0;
+                border-radius: 35px;
+                border: 2px solid white;
+                color: white;
+                background-color: #171717;
+                font-family: $special-font-family;
+                font-size: 1.8rem;
+                cursor: pointer;
+
+                @media (min-width: 991px){
+                    width: 250px;
+                    padding: 20px 0;
+                }
+
+
+                &:hover{
+                    border-color: $hover-color;
+
+                    i{
+                        transform: rotateX(360deg);
+                    }
+                }
+
+                &.copy{
+                    font-size: 1.1rem;
+
+                    @media (min-width: 991px){
+                        font-size: 1.4rem;
+                    }
+                }
+
+                i{
+                    transition: .3s;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &__popup{
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        line-height: 35px;
+        background-color: $hover-color;
+        z-index: 3;
+        border-radius: 15px;
+        animation: popupAnimation 3s both;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: $special-font-family;
+    }
+}
+
+@keyframes popupAnimation{
+    0%{
+        top: -10vh
+    }
+
+    20%{
+        top: 10vh
+    }
+    80%{
+        top: 10vh
+    }
+
+    100%{
+        top: -10vh
+    }
+}

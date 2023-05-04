@@ -1,0 +1,81 @@
+@import 'variables';
+@import 'mixins';
+
+.skills{
+   @include sectionGap;
+
+    &__title{
+        @include sectionTitle(#FF6B2B);
+    } 
+
+    &__subtitle{
+        margin:  10px $margin-mobile;
+        font-family: $special-font-family;
+        font-size: 1.6rem;
+
+        @media (min-width: 781px){
+            margin: 10px $margin-desktop;
+            font-size: 2.1rem;
+        }
+    }
+    
+    &__container{
+        margin: 25px $margin-mobile;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-content: center;
+
+        @media (min-width: 781px){
+            margin: 45px $margin-desktop;
+        }
+
+        @media (min-width: 991px){
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .skills__element{
+            position: relative;
+           text-align: center;
+
+            .skills__image{
+                position: relative;
+                
+                width: 60px;
+                transition: .5s;
+
+                @media(min-width: 781px){
+                    width: 80px;
+                }
+
+                @media(min-width: 991px){
+                    width: 90px;
+                }
+
+                &:hover{
+                    animation: skillIconRotate .3s linear both;
+                    animation-iteration-count: 1
+                }
+            }
+
+            .skills__text{
+                text-align: center;
+                font-family: $special-font-family;
+                font-size: 1.3rem;
+
+                @media (min-width: 781px){
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+@keyframes skillIconRotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

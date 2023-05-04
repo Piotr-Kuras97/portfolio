@@ -2,10 +2,8 @@
 
 .main{
     position: relative;
-    background-color: #182026;
     max-width: $max-width;
     margin: 0 auto;
-    height: 300vh;
 
     @media (min-width: 781px){
         margin-top: 10vh;
@@ -44,7 +42,7 @@
         width: 20px;
         height: 20px;
         animation-delay: 2s;
-        animation-duration: 12s;
+        animation-duration: 20s;
     }
     
     &__circles li:nth-child(3){
@@ -59,7 +57,7 @@
         width: 60px;
         height: 60px;
         animation-delay: 0s;
-        animation-duration: 18s;
+        animation-duration: 27s;
     }
     
     &__circles li:nth-child(5){
@@ -104,7 +102,7 @@
         width: 150px;
         height: 150px;
         animation-delay: 0s;
-        animation-duration: 11s;
+        animation-duration: 16s;
     }
     
     
@@ -113,12 +111,16 @@
     
         0%{
             transform: translateY(0) rotate(0deg);
-            opacity: 1;
+            opacity: 0;
             border-radius: 0;
+        }
+
+        10%{
+            opacity: 1
         }
     
         100%{
-            transform: translateY(2000px) rotate(720deg);
+            transform: translateY(3000px) rotate(720deg);
             opacity: 0;
             border-radius: 50%;
         }

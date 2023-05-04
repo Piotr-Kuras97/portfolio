@@ -1,6 +1,6 @@
-import HeaderBackground from '../components/HeaderBackground'
-import HeaderInfo from '../components/HeaderInfo'
-import HeaderGoDown from '../components/HeaderGoDown'
+import HeaderBackground from '../components/Header/HeaderBackground'
+import HeaderInfo from '../components/Header/HeaderInfo'
+import HeaderGoDown from '../components/Header/HeaderGoDown'
 
 import '../styles/header.scss'
 

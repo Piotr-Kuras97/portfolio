@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
-import Burger from "../components/Burger"
-import MenuElements from '../components/MenuElements'
+import Burger from "../components/Menu/Burger"
+import MenuElements from '../components/Menu/MenuElements'
 
 import '../styles/menu.scss'
 
-const Menu = ({about}) => {
+const Menu = () => {
     const [isActive, setIsActive] = useState(false)
 
     const handleBurgerToggle = () => {
@@ -15,7 +15,7 @@ const Menu = ({about}) => {
     return (
         <nav className="menu">
             <Burger toggle={handleBurgerToggle} isActive={isActive}/>
-            <MenuElements isActive={isActive} about={about}/>
+            <MenuElements toggle={handleBurgerToggle} isActive={isActive} />
         </nav>
     )
 }

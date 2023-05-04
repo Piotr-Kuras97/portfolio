@@ -7,6 +7,9 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: $bgc-color; 
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -22,4 +25,8 @@ html{
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba($color: #000000, $alpha: 0.5);
+}
+
+::selection{
+    background-color: #FCB3BF;
 }

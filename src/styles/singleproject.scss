@@ -1,0 +1,95 @@
+@import 'variables';
+@import 'mixins';
+
+.project{
+    margin: $margin-mobile;
+    animation: showProject 1.5s both;
+
+    @media (min-width: 781px){
+        margin: $margin-mobile $margin-desktop;
+    }
+
+    &__title{
+        font-size: 1.8rem;
+        font-family: $special-font-family;
+        @media (min-width: 781px){
+            font-size: 2.1rem;
+        }
+    }
+
+    &__container{
+
+        @media(min-width: 991px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        .project__description{
+            text-align: justify;
+            margin: $margin-mobile / 2  0;
+            font-size: 1.4rem;
+    
+            @media (min-width: 781px){
+                font-size: 1.6rem;
+            }
+        }
+    
+        .project__technology-container{
+            font-family: $special-font-family;
+            .project__technology{
+                font-size: 1.6rem;
+                margin: $margin-mobile / 2  0;
+    
+                @media (min-width: 781px){
+                    font-size: 1.8rem;
+                }
+            }
+    
+            .project__technology-list{
+                font-size: 1.5rem;
+                margin-left: $margin-mobile;
+    
+                @media (min-width: 781px){
+                    font-size: 1.6rem;
+                }
+    
+                .project__technology-element{
+                    margin: 8px 0;
+                }
+            }
+        }
+    }
+
+    &__btn{
+        @include btn;
+        display: inline-block;
+        margin: 15px auto;
+        font-size: 2.2rem;
+        padding: 7px 14px;
+        margin-right: 25px;
+        text-decoration: none;
+    }
+
+    &__back{
+        color: $basic-font-color;
+        text-align: right;
+        font-size: 1.4rem;
+
+        @media (min-width: 781px){
+            font-size: 1.6rem;
+        }
+
+        &:hover{
+            color: $hover-color
+        }
+    }
+}
+
+@keyframes showProject{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
